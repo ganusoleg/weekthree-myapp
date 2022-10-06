@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import image from './picOne.png';
+import imageTwo from './picTwo.png';
+import { ToDoList } from './ToDoList';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className="picOne container">
+      <img src={ image } width="370px" alt="pic"/>
+      </div>
+      <div className="container">
+      <h1>Список дел на сегодня</h1>
+      </div>
+      <ToDoList/>
+      <div className="picTwo container">
+      <img src={ imageTwo } width="370px" alt="picTwo"/>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
